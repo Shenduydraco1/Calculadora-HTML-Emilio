@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTD-8"/>
+        <title>Calculadora</title>
+        <link rel="stylesheet" hred="Calculadora.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Inter', sans-serif;
+                font-size: 50px;
+                }
+                .container {
+                padding: 20px;
+                height: 100vh;
+                background-color: #eeeeee;
+                grid-template-columns: repeat(4, 1fr);
+                justify-content: center;
+                align-items: center;
+                color:#fff;
+                display: grid;
+                place-items: center;
+                gap: 10px
+                }
+
+                .item.circle {                    
+                height: 200px;
+                width: 300px;
+                background: #6b346d;
+                border-radius: 50%;
+                color: #000000;
+                justify-content: center;
+                align-items: center;
+                }
+
+                .item {
+                height: 200px;
+                width: 300px;
+                background: #000000;
+                border-radius: 1rem;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1 1 auto;
+                }
+
+                .item.Sumar {
+                grid-column: 4;
+                grid-row: span 2;
+                height: 100%;
+                background: #61473f;
+                border-radius: 1rem;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item circle">CE</div>
+            <div class="item">√</div>
+            <div class="item">%</div>
+            <div class="item">/</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">*</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">-</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item Sumar">+</div>
+            <div class="item">0</div>
+            <div class="item">.</div>
+            <div class="item">=</div>
+          </div>
+    </body>
+</html>
